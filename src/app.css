@@ -1,3 +1,21 @@
+@font-face {
+    font-family: "Hind Madurai";
+    src: url(../assets/fonts/HindMadurai-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Shurjo";
+    src: url(../assets/fonts/ShurjoWeb_400.woff2);
+}
+
+.hind-madurai {
+    font-family: "Hind Madurai";
+}
+
+.font-shurjo {
+    font-family: "Shurjo";
+}
+
 @import "tailwindcss" source(none);
 @source "../*.{html,js}";
 @plugin "daisyui";
