@@ -40,7 +40,7 @@
                 </div>
                 <!-- coin count -->
                 <div class="flex items-center gap-1 bg-[#ECFFF0] px-[14px] sm:px-6 py-2 rounded-4xl font-bold">
-                    <span class="text-[14px]">100</span>
+                    <span id="current-coin" class="text-[14px]">100</span>
                     <span><img src="./assets/coin.png" alt="Coin" class="w-4"></span>
                 </div>
                 <!-- copy count -->
@@ -101,7 +101,7 @@
                         <!-- card title -->
                         <div class="mb-4">
                             <h2 class="font-shurjo font-bold text-[18px] text-[#000000]">জাতীয় জরুরি সেবা</h2>
-                            <h3 class="text-gray-500 leading-4 text-[15px]">National Emergency</h3>
+                            <h3 class="text-gray-500 leading-4 text-[15px]">National Emergency Service</h3>
                         </div>
                         <!-- card call number -->
                         <div>
@@ -112,7 +112,7 @@
                             <span class="px-3 py-1 bg-gray-100 text-gray-500 text-[13px] rounded-2xl">সার্বজনীন</span>
                         </div>
                         <!-- card call and copy button -->
-                        <div class="flex flex-row items-center justify-between gap-4 mt-5">
+                        <div class="flex flex-row items-center justify-between gap-2 mt-5">
                             <!-- copy button -->
                             <div class="w-full">
                                 <button
@@ -122,7 +122,7 @@
                             <!-- call button -->
                             <div class="w-full">
                                 <button
-                                    class="text-[14px] font-bold py-[6px] cursor-pointer rounded w-[100%] bg-[#00A63E] hover:bg-gray-800 transition text-white"><i
+                                    class="call-btn text-[14px] font-bold py-[6px] cursor-pointer rounded w-[100%] bg-[#00A63E] hover:bg-gray-800 transition text-white"><i
                                         class="fa-solid fa-phone"></i> Call</button>
                             </div>
                         </div>
@@ -151,7 +151,7 @@
                             <span class="px-3 py-1 bg-gray-100 text-gray-500 text-[13px] rounded-2xl">পুলিশ</span>
                         </div>
                         <!-- card call and copy button -->
-                        <div class="flex flex-row items-center justify-between gap-4 mt-5">
+                        <div class="flex flex-row items-center justify-between gap-2 mt-5">
                             <!-- copy button -->
                             <div class="w-full">
                                 <button
@@ -161,7 +161,7 @@
                             <!-- call button -->
                             <div class="w-full">
                                 <button
-                                    class="text-[14px] font-bold py-[6px] cursor-pointer rounded w-[100%] bg-[#00A63E] hover:bg-gray-800 transition text-white"><i
+                                    class="call-btn text-[14px] font-bold py-[6px] cursor-pointer rounded w-[100%] bg-[#00A63E] hover:bg-gray-800 transition text-white"><i
                                         class="fa-solid fa-phone"></i> Call</button>
                             </div>
                         </div>
@@ -190,7 +190,7 @@
                             <span class="px-3 py-1 bg-gray-100 text-gray-500 text-[13px] rounded-2xl">ফায়ার</span>
                         </div>
                         <!-- card call and copy button -->
-                        <div class="flex flex-row items-center justify-between gap-4 mt-5">
+                        <div class="flex flex-row items-center justify-between gap-2 mt-5">
                             <!-- copy button -->
                             <div class="w-full">
                                 <button
@@ -200,7 +200,7 @@
                             <!-- call button -->
                             <div class="w-full">
                                 <button
-                                    class="text-[14px] font-bold py-[6px] cursor-pointer rounded w-[100%] bg-[#00A63E] hover:bg-gray-800 transition text-white"><i
+                                    class="call-btn text-[14px] font-bold py-[6px] cursor-pointer rounded w-[100%] bg-[#00A63E] hover:bg-gray-800 transition text-white"><i
                                         class="fa-solid fa-phone"></i> Call</button>
                             </div>
                         </div>
@@ -229,7 +229,7 @@
                             <span class="px-3 py-1 bg-gray-100 text-gray-500 text-[13px] rounded-2xl">স্বাস্থ্য</span>
                         </div>
                         <!-- card call and copy button -->
-                        <div class="flex flex-row items-center justify-between gap-4 mt-5">
+                        <div class="flex flex-row items-center justify-between gap-2 mt-5">
                             <!-- copy button -->
                             <div class="w-full">
                                 <button
@@ -239,7 +239,7 @@
                             <!-- call button -->
                             <div class="w-full">
                                 <button
-                                    class="text-[14px] font-bold py-[6px] cursor-pointer rounded w-[100%] bg-[#00A63E] hover:bg-gray-800 transition text-white"><i
+                                    class="call-btn text-[14px] font-bold py-[6px] cursor-pointer rounded w-[100%] bg-[#00A63E] hover:bg-gray-800 transition text-white"><i
                                         class="fa-solid fa-phone"></i> Call</button>
                             </div>
                         </div>
@@ -268,7 +268,7 @@
                             <span class="px-3 py-1 bg-gray-100 text-gray-500 text-[13px] rounded-2xl">সহায়তা</span>
                         </div>
                         <!-- card call and copy button -->
-                        <div class="flex flex-row items-center justify-between gap-4 mt-5">
+                        <div class="flex flex-row items-center justify-between gap-2 mt-5">
                             <!-- copy button -->
                             <div class="w-full">
                                 <button
@@ -278,7 +278,7 @@
                             <!-- call button -->
                             <div class="w-full">
                                 <button
-                                    class="text-[14px] font-bold py-[6px] cursor-pointer rounded w-[100%] bg-[#00A63E] hover:bg-gray-800 transition text-white"><i
+                                    class="call-btn text-[14px] font-bold py-[6px] cursor-pointer rounded w-[100%] bg-[#00A63E] hover:bg-gray-800 transition text-white"><i
                                         class="fa-solid fa-phone"></i> Call</button>
                             </div>
                         </div>
@@ -307,7 +307,7 @@
                             <span class="px-3 py-1 bg-gray-100 text-gray-500 text-[13px] rounded-2xl">সরকারি</span>
                         </div>
                         <!-- card call and copy button -->
-                        <div class="flex flex-row items-center justify-between gap-4 mt-5">
+                        <div class="flex flex-row items-center justify-between gap-2 mt-5">
                             <!-- copy button -->
                             <div class="w-full">
                                 <button
@@ -317,7 +317,7 @@
                             <!-- call button -->
                             <div class="w-full">
                                 <button
-                                    class="text-[14px] font-bold py-[6px] cursor-pointer rounded w-[100%] bg-[#00A63E] hover:bg-gray-800 transition text-white"><i
+                                    class="call-btn text-[14px] font-bold py-[6px] cursor-pointer rounded w-[100%] bg-[#00A63E] hover:bg-gray-800 transition text-white"><i
                                         class="fa-solid fa-phone"></i> Call</button>
                             </div>
                         </div>
@@ -346,7 +346,7 @@
                             <span class="px-3 py-1 bg-gray-100 text-gray-500 text-[13px] rounded-2xl">বিদ্যুৎ</span>
                         </div>
                         <!-- card call and copy button -->
-                        <div class="flex flex-row items-center justify-between gap-4 mt-5">
+                        <div class="flex flex-row items-center justify-between gap-2 mt-5">
                             <!-- copy button -->
                             <div class="w-full">
                                 <button
@@ -356,7 +356,7 @@
                             <!-- call button -->
                             <div class="w-full">
                                 <button
-                                    class="text-[14px] font-bold py-[6px] cursor-pointer rounded w-[100%] bg-[#00A63E] hover:bg-gray-800 transition text-white"><i
+                                    class="call-btn text-[14px] font-bold py-[6px] cursor-pointer rounded w-[100%] bg-[#00A63E] hover:bg-gray-800 transition text-white"><i
                                         class="fa-solid fa-phone"></i> Call</button>
                             </div>
                         </div>
@@ -385,7 +385,7 @@
                             <span class="px-3 py-1 bg-gray-100 text-gray-500 text-[13px] rounded-2xl">এনজিও</span>
                         </div>
                         <!-- card call and copy button -->
-                        <div class="flex flex-row items-center justify-between gap-4 mt-5">
+                        <div class="flex flex-row items-center justify-between gap-2 mt-5">
                             <!-- copy button -->
                             <div class="w-full">
                                 <button
@@ -395,7 +395,7 @@
                             <!-- call button -->
                             <div class="w-full">
                                 <button
-                                    class="text-[14px] font-bold py-[6px] cursor-pointer rounded w-[100%] bg-[#00A63E] hover:bg-gray-800 transition text-white"><i
+                                    class="call-btn text-[14px] font-bold py-[6px] cursor-pointer rounded w-[100%] bg-[#00A63E] hover:bg-gray-800 transition text-white"><i
                                         class="fa-solid fa-phone"></i> Call</button>
                             </div>
                         </div>
@@ -424,7 +424,7 @@
                             <span class="px-3 py-1 bg-gray-100 text-gray-500 text-[13px] rounded-2xl">পরিবহন</span>
                         </div>
                         <!-- card call and copy button -->
-                        <div class="flex flex-row items-center justify-between gap-4 mt-5">
+                        <div class="flex flex-row items-center justify-between gap-2 mt-5">
                             <!-- copy button -->
                             <div class="w-full">
                                 <button
@@ -434,7 +434,7 @@
                             <!-- call button -->
                             <div class="w-full">
                                 <button
-                                    class="text-[14px] font-bold py-[6px] cursor-pointer rounded w-[100%] bg-[#00A63E] hover:bg-gray-800 transition text-white"><i
+                                    class="call-btn text-[14px] font-bold py-[6px] cursor-pointer rounded w-[100%] bg-[#00A63E] hover:bg-gray-800 transition text-white"><i
                                         class="fa-solid fa-phone"></i> Call</button>
                             </div>
                         </div>
@@ -453,25 +453,14 @@
                         </div>
                         <div>
                             <!-- clear button -->
-                            <button
+                            <button id="history-clear-btn"
                                 class="bg-[#00A63E] px-6 py-2 rounded-4xl font-bold text-white cursor-pointer">Clear</button>
                         </div>
                     </div>
                     <!-- History items section -->
-                    <div class="flex flex-col gap-3">
+                    <div id="call-history" class="flex flex-col gap-3">
                         <!-- history item -->
-                        <div class="bg-[#f7f7f7] rounded-[8px] px-4 py-2 flex items-center justify-between">
-                            <div>
-                                <!-- item title -->
-                                <h4 class="font-semibold font-shurjo mb-1">জাতীয় জরুরি সেবা</h4>
-                                <!-- item number -->
-                                <span class="text-[16px] text-gray-500">999</span>
-                            </div>
-                            <div>
-                                <!-- history time -->
-                                <span>10:30:12 AM</span>
-                            </div>
-                        </div>
+
                     </div>
                 </aside>
             </div>
