@@ -77,3 +77,23 @@ historyClearBtn.addEventListener('click', function () {
 })
 
 
+// Copy button function
+cardSection.addEventListener('click', function (e) {
+    if (e.target.className.includes('copy-btn')) {
+        // copy button
+        const copyBtn = e.target;
+        // service title
+        const serviceTitle = copyBtn.parentNode.parentNode.parentNode.children[1].children[0].innerText;
+        // Service number
+        const copyNumberItem = copyBtn.parentNode.parentNode.parentNode.children[2].children[0].innerText;
+        // copy 
+        navigator.clipboard.writeText(copyNumberItem);
+        // Alert showing copy number
+        alert(`${serviceTitle} নম্বরটি কপি হয়েছে ${copyNumberItem}`);
+
+        // Copy count increase
+        const copyCount = idElement('copy-count').innerText;
+        const copyCountIncrement = Number(copyCount) + 1;
+        idElement('copy-count').innerText = copyCountIncrement;
+    }
+})
