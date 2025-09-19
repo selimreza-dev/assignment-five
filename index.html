@@ -84,9 +84,10 @@
         <!-- Main card section start -->
         <section class="bg-[#F5FFF6] ">
             <!-- card & history section wrapper -->
-            <div class="w-[99%] sm:w-[90%] mx-auto px-2 py-8 flex gap-5">
+            <div class="w-[99%] sm:w-[90%] mx-auto px-2 py-8 flex flex-col sm:flex-row gap-5">
                 <!-- Card section -->
-                <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 basis-9/12 ">
+                <div
+                    class="grid grid-cols-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 basis-[100%] sm:basis-[50%] md:basis-[60%] lg:basis-[70%]">
                     <!-- Emergency Hotline Section -->
                     <!-- National Emergency -->
                     <div class="bg-white shadow p-5 rounded-[5px]">
@@ -393,7 +394,7 @@
                     </div>
 
                     <!-- Bangladesh Railway -->
-                    <div class="bg-white shadow p-5 rounded-[5px]">
+                    <div class="bg-white shadow p-5 rounded-[5px] col-span-full lg:col-span-1">
                         <!-- card logo & heart icon-->
                         <div class="flex items-center justify-between mb-3">
                             <img src="./assets/Bangladesh-Railway.png" alt="Bangladesh Railway icon"
@@ -432,29 +433,30 @@
 
                 </div>
                 <!-- History section -->
-                <aside class=" basis-3/12 bg-white rounded p-5 shadow">
+                <aside class="basis-[100%] sm:basis-[50%] md:basis-[40%] lg:basis-[30%] bg-white rounded p-5 shadow">
                     <!-- section title & clear button-->
-                    <div>
-                        <div>
+                    <div class="flex flex-row items-center justify-between mb-5">
+                        <div class="flex items-center gap-2">
                             <!-- history icon -->
                             <i class="fa-regular fa-clock"></i>
                             <!-- history section title-->
-                            <h3>Call History</h3>
+                            <h3 class="font-semibold text-[18px]">Call History</h3>
                         </div>
                         <div>
                             <!-- clear button -->
-                            <button>Clear</button>
+                            <button
+                                class="bg-[#00A63E] px-6 py-2 rounded-4xl font-bold text-white cursor-pointer">Clear</button>
                         </div>
                     </div>
                     <!-- History items section -->
-                    <div>
+                    <div class="flex flex-col gap-3">
                         <!-- history item -->
-                        <div>
+                        <div class="bg-[#f7f7f7] rounded-[8px] px-4 py-2 flex items-center justify-between">
                             <div>
                                 <!-- item title -->
-                                <h4>জাতীয় জরুরি সেবা</h4>
+                                <h4 class="font-semibold font-shurjo mb-1">জাতীয় জরুরি সেবা</h4>
                                 <!-- item number -->
-                                <span>999</span>
+                                <span class="text-[16px] text-gray-500">999</span>
                             </div>
                             <div>
                                 <!-- history time -->
