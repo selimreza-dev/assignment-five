@@ -25,8 +25,10 @@ cardSection.addEventListener('click', function (event) {
         const currentCoin = idElement('current-coin').innerText;
         // call button
         const callBtn = event.target;
-        // Service Name
-        const serviceName = callBtn.parentNode.parentNode.parentNode.children[1].children[1].innerText;
+        // Service Name Title
+        const serviceName = callBtn.parentNode.parentNode.parentNode.children[1].children[0].innerText
+        // Service Name sub title
+        const serviceNameSubTitle = callBtn.parentNode.parentNode.parentNode.children[1].children[1].innerText;
         // Service Number
         const serviceNumber = callBtn.parentNode.parentNode.parentNode.children[2].children[0].innerText;
 
@@ -41,7 +43,7 @@ cardSection.addEventListener('click', function (event) {
             const coinReduce = Number(currentCoin) - 20;
             idElement('current-coin').innerText = coinReduce;
             // calling alert
-            alert(`📞 Calling ${serviceName} ${serviceNumber}...`);
+            alert(`📞 Calling ${serviceNameSubTitle} ${serviceNumber}...`);
 
             // Create Element
             const callHistoryItem = document.createElement('div');
