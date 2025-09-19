@@ -18,4 +18,5 @@
 
 @import "tailwindcss" source(none);
 @source "../*.{html,js}";
+@source ".././script/*.{js}";
 @plugin "daisyui";
